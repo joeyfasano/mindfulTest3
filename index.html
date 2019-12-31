@@ -25,7 +25,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="#">
-                <img src="/assets/images/Mindful Logo Final-2.png" alt="Nav Logo" width="112" height="28">
+                <img src="assets/images/Mindful Logo Final-2-resize.png" alt="Nav Logo" width="112" height="28">
               </a>
             <a class="navbar-item navbar-menu-item" href="#about">
                 About
@@ -76,44 +76,74 @@
         
     </section>
 
-   
+    <!-- style="background-color: #6AA2C2;" -->
+    <!-- style="background-image:url('assets/images/blue-snow.png');" -->
 
     <!-- About -->
-    <section class="hero is-large" id="about" style="background-color: rgb(236, 244, 255);">
+    <section class="hero is-large" id="about" style="background-image:url('assets/images/papyrus.png');">
         <div class="hero-body">
             <div class="columns">
               <div class="column">
-                <h1 class="title">In-Home Care Services for the Elderly</h1>
-                <h2 class="subtitle">Mindful home care provide compassionate, personalized services tailored to your requirements and the requests of your elderly loved one.</h2>
-                <p>We begin by reviewing your loved one's needs and essentials. We meet with involved family members and, when necessary, consult with your senior’s physician(s), social workers, hospital or nursing home staff. Our goal is to get a complete picture of your loved one's  in-home care needs.
-                  As part of this process, we match your loved one's basic needs to a selected group of compassionate in-home caregivers. We invite and encourage you to be part of the caregiver selection process.</P>
+               
+                
+
+                  <!-- <div class="card">
+                    <div class="card-content"> -->
+                      <h1 class="title">In-Home Care Services for the Elderly</h1>
+                      <h2 class="subtitle">Mindful home care provide compassionate, personalized services tailored to your requirements and the requests of your elderly loved one.</h2>
+                      <p class="subtitle">
+                        We begin by reviewing your loved one's needs and essentials. We meet with involved family members and, when necessary, consult with your senior’s physician(s), social workers, hospital or nursing home staff. Our goal is to get a complete picture of your loved one's  in-home care needs.
+                  As part of this process, we match your loved one's basic needs to a selected group of compassionate in-home caregivers. We invite and encourage you to be part of the caregiver selection process.
+                      </p>
+                  
+                    <!-- </div>
+                    <footer class="card-footer">
+                      <p class="card-footer-item">
+                        <span>
+                          See our <a href="#services">Services</a>
+                        </span>
+                      </p>
+                    </div> -->
                 
               </div>
-              <div class="column"><img id="hands" src="/assets/images/rose-hands.jpg" alt="">
+              
+            
+
+                <div class="column"><img id="hands" src="assets/images/rose-hands-resize.jpg" alt="">
+                </div>
               </div>
-            </div>
-    </div>
+          </div>
+              
+    
     </section>
 
+    <!-- style="background-image:url('assets/images/papyrus.png');" -->
+    
  <!-- Services -->
- <section class="hero is-large" id="services" style="background-color: #6AA2C2;">
+ <section class="hero is-large" id="services" style='background-color: #6AA2C2;'>
   <div class="hero-body has-text-centered has-text-left-mobile">
           <div class="container">
             <div class="service-header container">
-            <h1 class="title has-text-white">Living Assistance Services</h1>
-            <h2 class="subtitle has-text-light">Some activities of daily living that our home care services focus on include:</h2>
-              <p>
-
-              </p>
+              <div class="card" style="background-image:url('assets/images/blue-snow.png');">
+                <div class="card-content">
+                  <h1 class="title">Living Assistance Services</h1>
+            <h2 class="subtitle">Some activities of daily living that our home care services focus on include:</h2>
+              
+                </div>
+                </div>
+            
+              
           </div>
             <div class="columns has-text-centered-mobile">
             <div class="column">
               
               <img class="s-icon" src="assets/images/nurse.png">
+              <p>
               Bathing Assistance<br>
               Dressing Assistance<br>
               Walking Assistance<br>
               Meal Preparation/Diet Monitoring<br>
+            </p>
             </div>
             <div class="column">
           
@@ -149,10 +179,11 @@ Weekends and Holiday Care is Available<br>
             <div class="hero-body">
                     <div class="container">
                 <h2 class="title">Contact</h2>
+                <form name="contact" method="POST" data-netlify="true">
                 <div class="field">
                         <label class="label">Name</label>
                         <div class="control">
-                          <input class="input" type="text" placeholder="First, Last">
+                          <input class="input" type="text" placeholder="First, Last" name="name">
                         </div>
                       </div>
                       
@@ -167,7 +198,7 @@ Weekends and Holiday Care is Available<br>
                                     </a>
                                   </p>
                                   <p class="control is-expanded">
-                                    <input class="input" type="tel" placeholder="Your phone number">
+                                    <input class="input" type="tel" placeholder="Your phone number" name="phone_number">
                                   </p>
                                 </div>
                                 <p class="help">Enter your 10 digit phone number</p>
@@ -178,13 +209,11 @@ Weekends and Holiday Care is Available<br>
                       <div class="field">
                         <label class="label">Email</label>
                         <div class="control has-icons-left has-icons-right">
-                          <input class="input is-danger" type="email" placeholder="Email">
+                          <input class="input" type="email" placeholder="Email" name="email">
                           <span class="icon is-small is-left">
                             <i class="fas fa-envelope"></i>
                           </span>
-                          <span class="icon is-small is-right">
-                            <i class="fas fa-exclamation-triangle"></i>
-                          </span>
+                         
                         </div>
                        
                       </div>
@@ -193,7 +222,7 @@ Weekends and Holiday Care is Available<br>
                       <div class="field">
                         <label class="label">Message</label>
                         <div class="control">
-                          <textarea class="textarea" placeholder="How can we help you?"></textarea>
+                          <textarea class="textarea" placeholder="How can we help you?" name="message"></textarea>
                         </div>
                       </div>
                       
@@ -201,12 +230,12 @@ Weekends and Holiday Care is Available<br>
                       
                       <div class="field is-grouped">
                         <div class="control">
-                          <button class="button is-link">Submit</button>
+                          <button type="submit" class="button is-link">Submit</button>
                         </div>
-                        <div class="control">
-                          <button class="button is-link is-light">Cancel</button>
-                        </div>
+                       
                       </div>
+
+                    </form>
             </div>
             </div>
     </section>
